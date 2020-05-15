@@ -3,9 +3,11 @@ import {Link} from 'react-router-dom'
 
 export default function Nav() {
     return (
-        <div>
+        <div className = 'nav-container'>
         <nav>
-          <a href="blank">Portfolio</a>
+          <Link to="/">About</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/contactme">Contact Me</Link>
         </nav> 
         </div>
     )
