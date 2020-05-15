@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
+
+@mixin fade-in($waitTime) {
+  animation: wait #{$waitTime},
+  fadein 1s ease-in #{$waitTime};
+}
+@mixin background-change($waitTime) {
+  animation: wait #{$waitTime},
+  backgroundchange 2s ease-in-out #{$waitTime} fill;
+}
+
+$font-brush: 'Nanum Brush Script', cursive;
+$font-gothic: 'Nanum Gothic', sans-serif;
+$font-coding: 'Nanum Gothic Coding', monospace;
+
+@keyframes wait {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundchange{
+  0% {
+    background: 0;
+  }
+
+  100% {
+    background: 1;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header-container {
+  @include fade-in('0s');
+  //add many delay animations!!
+  z-index: -1;
+  width: 100vw;
+  height: 600px;
+  position: fixed;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dum4u7sro/image/upload/v1588858424/Copy_of_Robert_Fros_ychui0.png');
+  .header-content {
+    @include fade-in('0.5s');
+    @include background-change('0.5s');
+    width: 50%;
+    height: 50%;
+    letter-spacing: 7px;
+    border: solid rgba(73, 73, 73, 0.5);
+    display: flex;
+    background: rgba(77, 157, 224, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 2px #4d4d4d inset;
+    border-radius: 10px;
+    h1{
+      @include fade-in('1.5s');
+      font-family: $font-brush;
+      color: white;
+      font-size: 100px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h3{
+      @include fade-in('2s');
+      font-family: $font-brush;
+      color: white;
+      font-size: 70px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.test {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  top: 600px;
+  background: white;
+  box-shadow: 0 0 20px;
+  overflow-y: scroll;
+}
+
+
+
