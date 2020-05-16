@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
 
-$dark-blue-grey: rgba(114, 109, 168, 1);
-$carolina-blue: rgba(77, 157, 224, 1);
-$pistachio: rgba(142, 208, 129, 1);
-$beige: rgba(235, 235, 211, 1);
-$onyx: rgba(60, 60, 59, 1);
+$color1: rgba(66, 75, 84, 1);
+$color2: rgba(179, 141, 151, 1);
+$color3: rgba(213, 172, 169, 1);
+$color4: rgba(235, 207, 178, 1);
+$color5: rgba(197, 186, 175, 1);
+$light-blue: #85C7F2;
+
+$background-header: $color1;
+$background-header-content: $color3;
+$background-main: rgba(209, 166, 184, 0.8);
 
 
 @mixin fade-in($waitTime) {
   animation: wait #{$waitTime},
   fadein 1s ease-in #{$waitTime};
 }
+
 @mixin background-change($waitTime) {
   animation: wait #{$waitTime},
   backgroundchange 2s ease-in-out #{$waitTime} fill;
 }
 
-$font-brush: 'Nanum Brush Script', cursive;
-$font-gothic: 'Nanum Gothic', sans-serif;
-$font-coding: 'Nanum Gothic Coding', monospace;
+$font-brush: 'Nanum Brush Script',
+cursive;
+$font-gothic: 'Nanum Gothic',
+sans-serif;
+$font-coding: 'Nanum Gothic Coding',
+monospace;
 
 @keyframes wait {
   0% {
@@ -40,7 +49,7 @@ $font-coding: 'Nanum Gothic Coding', monospace;
   }
 }
 
-@keyframes backgroundchange{
+@keyframes backgroundchange {
   0% {
     background: 0;
   }
@@ -78,34 +87,38 @@ code {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://res.cloudinary.com/dum4u7sro/image/upload/v1588858424/Copy_of_Robert_Fros_ychui0.png');
+  background: url('https://res.cloudinary.com/dum4u7sro/image/upload/v1589593901/Desktop_portfolio_of8ycw.png');
+
   .header-content {
-    @include fade-in('0.5s');
-    @include background-change('0.5s');
-    letter-spacing: 7px;
-    border: solid rgba(73, 73, 73, 0.5);
+    @include fade-in('1.5s');
+    min-width: 100vw;
+    min-height: 100vh;
+    letter-spacing: 5px;
     display: flex;
-    background: rgba(77, 157, 224, 0.9);
+    background: url('https://res.cloudinary.com/dum4u7sro/image/upload/v1589594154/Desktop_portfolio_1_ysntwo.png');
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 20px 2px #4d4d4d inset;
-    border-radius: 70px;
-    h1{
-      @include fade-in('1.5s');
+
+    h1 {
+      @include fade-in('3s');
       font-family: $font-brush;
       color: white;
-      font-size: 100px;
+      text-shadow: 5px 5px 5px #000000;
+      font-size: 150px;
       font-weight: 400;
       text-align: center;
       margin: 0;
       padding: 0;
     }
-    h3{
-      @include fade-in('2s');
+
+    h3 {
+      @include fade-in('3.5s');
       font-family: $font-brush;
       color: white;
-      font-size: 70px;
+      text-shadow: 5px 5px 5px #000000;
+      font-size: 110px;
       font-weight: 400;
       text-align: center;
       margin: 0;
@@ -114,25 +127,40 @@ code {
   }
 }
 
-// .nav-container{
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 3;
-//   padding: 20px;
-// }
+.nav-container {
+  width: 100%;
+  z-index: 3;
+  padding: 20px;
+
+  nav {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    p{
+      margin: 0;
+      color: white;
+    }
+    :any-link {
+      font-family: $font-gothic;
+      margin: 0;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
 
 
 .Main {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 1;
   position: absolute;
   top: 90vh;
-  background: white;
+  background: $background-main;
   box-shadow: 0 0 20px;
   overflow-y: scroll;
+
 }
-
-
-

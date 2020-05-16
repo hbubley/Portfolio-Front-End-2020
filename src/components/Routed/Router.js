@@ -8,7 +8,7 @@ import Footer from "../Footer";
 
 export default function Router() {
   return (
-    <div>
+    <div className='Main'>
       <Nav />
       <Switch>
         <Route exact path="/" component={About} />
