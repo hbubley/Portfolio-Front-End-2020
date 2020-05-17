@@ -9,7 +9,7 @@ $light-blue: #85C7F2;
 
 $background-header: $color1;
 $background-header-content: $color3;
-$background-main: rgba(209, 166, 184, 0.8);
+$background-main: rgba(0, 0, 0, 0.8);
 
 
 @mixin fade-in($waitTime) {
@@ -80,7 +80,7 @@ code {
   //add many delay animations!!
   z-index: -1;
   max-width: 100vw;
-  min-height: 100vh;
+  max-height: 100vh;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -128,11 +128,11 @@ code {
 }
 
 .nav-container {
+  @include fade-in('4s');
   max-width: 100vw;
   z-index: 3;
   padding: 2vh;
-  max-height: 20vh;
-
+  max-height: 15vh;
   nav {
     width: 50%;
     display: flex;
@@ -140,7 +140,6 @@ code {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-
     img {
       width: 60px;
     }
@@ -161,8 +160,9 @@ code {
 
 
 .Main {
+  @include fade-in('2s');
   width: 100vw;
-  max-height: 100vh;
+  min-height: 100vh;
   z-index: 1;
   position: absolute;
   top: 90vh;

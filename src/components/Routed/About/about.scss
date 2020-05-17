@@ -1,41 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
+
+$font-brush: 'Nanum Brush Script',
+cursive;
+$font-gothic: 'Nanum Gothic',
+sans-serif;
+$font-coding: 'Nanum Gothic Coding',
+monospace;
+
 @mixin centered-flex-display {
     display: flex;
     justify-content: center;
-    align-items: center;  
-  }
+    align-items: center;
+}
+.neon{
+    text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
+    font-family: $font-coding;
+}
+.neon-alt{
+    text-shadow: -2px -2px 3px rgba(117, 213, 253, 0.5), 2px 2px 3px rgba(255, 34, 129, 0.5);
+    font-family: $font-brush;
+    font-size: 35px;
+}
 
 .about-container {
-    max-height: 75vh;
-    max-width: 100vw;
+    max-width: 88vw;
+    margin: 0 auto;
     display: grid;
+    padding-top: 15px;
     grid-template-areas:
-      'heading heading heading'
-      'skills img bio'
-      'skills img bio'
-      'resume mouse bio';
+        'heading heading heading'
+        'skills img bio'
+        'skills img bio'
+        'resume mouse bio';
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+
     .about-header {
-      grid-area: heading;
+        grid-area: heading;
+
+        p {
+            font-family: $font-gothic;
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 1.3px;
+            text-align: center;
+            color: rgba($color: white, $alpha: 1);
+            text-decoration: none;
+            text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
+            padding: 5px;
+        }
     }
-  
+
     .about-image {
-      grid-area: img;
-  
-      img {
-        max-height: 400px;
-      }
+        grid-area: img;
+        @include centered-flex-display();
+
+        img {
+            max-height: 400px;
+        }
     }
-  
+
     .about-resume {
-      grid-area: resume;
+        grid-area: resume;
+        @include centered-flex-display();
+        img{
+            max-height: 300px;
+        }
     }
-  
+
     .about-skills {
-      grid-area: skills;
+        grid-area: skills;
+        @include centered-flex-display();
+        flex-direction: column;
+        color: white;
     }
+
     .about-bio {
-      grid-area: bio;
+        grid-area: bio;
+        @include centered-flex-display();
+        flex-direction: column;
+        min-width: 90%;
+        height: 80%;
+        font-family: $font-gothic;
+        color: white;
+        font-size: 20px;
+        // border: solid white;
+        background:rgba(0, 0, 0, 0.4);
+        ;
+        padding: 20px;
+        border-radius: 5px; 
+        div{
+            //FIND A WAY TO FIX OVERFLOW ISSUE!!
+        }
+        // box-shadow: 1px 1px 2px rgba(117, 213, 253, 0.6), -1px -1px 2px rgba(255, 34, 129, 0.6);
     }
-  
-  }
+    .about-mouse{
+        @include centered-flex-display();
+        color: white;
+    }
+
+}
