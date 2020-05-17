@@ -4,8 +4,8 @@ import HeaderText from './About/HeaderText'
 import Bio from './About/Bio'
 import Resume from './About/Resume'
 import Skills from './About/Skills'
-import Mouse from './About/Mouse'
 import './About/about.scss'
+import PersonalLinks from './About/PersonalLinks'
 
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
             <Bio />
             <Skills />
             <Resume />
-            <Mouse />
+            <PersonalLinks />
         </div>
     )
 }
