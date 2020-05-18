@@ -3,16 +3,16 @@
         "title": "Todo List",
         "image": "https://res.cloudinary.com/dum4u7sro/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1589830761/Screenshot_2020-05-18_at_2.38.40_PM_eba5g0.png",
         "description": "A todo list leveraging local storage and context",
-        "platforms": ["mobile", " ", "tablet", " ", "desktop"],
-        "languages": ["React", " ", "css"],
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faReact", "faCss3"],
         "url": "https://codesandbox.io/s/todo-app-haley-bubley-04032020-1fcyb"
     },
     {
         "title": "Responsive Design",
         "image": "https://screenshot.codepen.io/4083284.WNvOGBy.6d831683-0979-43d9-b4c3-69c0c575c14a.png",
         "description": "When screen size is adjusted display changes to fit view-size",
-        "platforms": ["mobile", " ", "tablet", " ", "desktop"],
-        "languages": ["html", " ", "css"],
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faHtml5", "faCss3"],
         "url": "https://codepen.io/hbubley/pen/QWbgyeV"
     },
     {
@@ -20,15 +20,15 @@
         "image": "https://screenshot.codepen.io/4083284.MWwmzxr.bb1fcd29-9d87-4821-961e-5631740d199a.png",
         "description": "Mock-up fashion blog remade from an image using both flex and grid properties",
         "platforms": ["desktop"],
-        "languages": ["html", " ", " ", "css"],
+        "languages": ["faHtml5", "faCss3"],
         "url": "https://codepen.io/hbubley/pen/MWwmzxr"
     },
     {
         "title": "Flexbox & Grid",
         "image": "https://screenshot.codepen.io/4083284.Poqmbjy.6464f841-dea0-44cb-b49c-f4f77f0eb332.png",
         "description": "Demonstrating understanding and usage of CSS grid properties",
-        "platforms": ["mobile", " ", "tablet", " ", "desktop"],
-        "languages": ["html", " ", "css"],
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faHtml5", "faCss3"],
         "url": "https://codepen.io/hbubley/pen/Poqmbjy?editors=1100"
     },
     {
@@ -36,7 +36,7 @@
         "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1589832292/Screenshot_2020-05-18_at_3.04.48_PM_h2bwwf.png",
         "description": "Nature based photo gallery image gallery made using css grid",
         "platforms": ["mobile", " ", "tablet", " ", "desktop"],
-        "languages": ["css"],
+        "languages": ["faCss3"],
         "url": "https://codepen.io/hbubley/pen/QWbgyeV"
     }
 ]
