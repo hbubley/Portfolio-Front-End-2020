@@ -4,8 +4,8 @@ export default function Bio() {
   return (
     <div className="about-bio">
       <div>
-        <h1 className="neon">"Who at the worst, if he fails, at least fails while daring greatly"</h1>
-        <h2 className='neon'>~ Theodore Roosevelt</h2>
+        <h1>"Who at the worst, if he fails, at least fails while daring greatly"</h1>
+        <h2>~ Theodore Roosevelt</h2>
         <p>
           By way of a scenic, hands-on journey, I have ventured through life in
           search of experience.
