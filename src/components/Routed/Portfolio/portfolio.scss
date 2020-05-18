@@ -124,10 +124,21 @@ monospace;
                 width: 200px;
                 height: 200px;
                 @media screen and (max-width: $mobile-break) {
+                    width: 35vw;
+                    height: 35vw;
+                    &:hover{
                     width: 200px;
                     height: 200px;
                     border-radius: 10px;
                     animation: gradient 10s infinite alternate;
+                    .project-overlay{
+                        visibility: visible;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 10px;
+                        animation: gradient 10s infinite alternate;
+                    }
+                    }
                 }
             }
 
@@ -135,6 +146,13 @@ monospace;
                 animation: gradient 6s infinite alternate;
                 transition: 0.5s;
                 border-radius: 5px;
+                .project-overlay{
+                    visibility: visible;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    animation: gradient 10s infinite alternate;
+                }
             }
 
             img {
@@ -147,19 +165,29 @@ monospace;
                 width: 100%;
                 text-align: center;
                 font-weight: bold;
-                height: 50%;
+                height: 100%;
                 @include centered-flex-display();
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: stretch;
                 background: rgba(255, 255, 255, 0.8);
                 backdrop-filter: blur(4px);
+                visibility: hidden;       
                 h4 {
                     font-family: $font-coding;
                     padding: 5px;
                     font-size: 23px;
                     @media screen and (max-width: $tablet-break) {
-                        font-size: 12px;
+                        font-size: 15px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+                p{
+                    font-family: $font-gothic;
+                    font-size: 16px;
+                    @media screen and (max-width: $tablet-break) {
+                        font-size: 10px;
                         padding: 0;
                         margin: 0;
                     }
@@ -169,8 +197,8 @@ monospace;
                       padding: 1px;
                       font-size: 23px;
                       @media screen and (max-width: $tablet-break) {
-                        font-size: 12px;
-                        padding: 0;
+                        font-size: 20px;
+                        padding: 2px;
                         margin: 0;
                     }
                   } 

@@ -19,6 +19,7 @@ export default function Project({ title, img, des, plat, lang, index, link }) {
     >
       <div className="project-overlay">
         <h4>{title}</h4>
+        <p>{des}</p>
         <div>{langIcons}</div>
         <div>{platIcons}</div>
         <button>
