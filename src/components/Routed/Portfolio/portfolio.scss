@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+$mobile-break: 425px;
+$tablet-break: 768px;
+$desktop-break: 1024px;
+
+
+$font-brush: 'Nanum Brush Script',
+cursive;
+$font-gothic: 'Nanum Gothic',
+sans-serif;
+$font-coding: 'Nanum Gothic Coding',
+monospace;
+
+@mixin centered-flex-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container{
+    margin: 40px;
+    h1{
+        font-family: $font-gothic;
+        color: white;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    img{
+        size: contain;
+    }
+    .card{
+    
+        a{
+            font-size: 25px;
+        }
+    }
+    
+}

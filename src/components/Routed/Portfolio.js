@@ -1,9 +1,12 @@
 import React from 'react'
+import Projects from './Portfolio/Projects'
+import './Portfolio/portfolio.scss'
 
 export default function Portfolio() {
     return (
-        <div>
-            <h1>portfolio</h1>
+        <div className='portfolio-container'>
+            <h1>Portfolio</h1>
+            <Projects />
         </div>
     )
 }

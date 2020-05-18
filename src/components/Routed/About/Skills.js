@@ -12,7 +12,7 @@ export default function Skills() {
           <li><FontAwesomeIcon icon={faHtml5} /> HTML</li>
           <li><FontAwesomeIcon icon={faSass} /> S/CSS</li>
           <li><FontAwesomeIcon icon={faJsSquare} /> Javascript</li>
-          <li><FontAwesomeIcon icon={faServer} /> Express/MongoDB</li>
+          <li><FontAwesomeIcon icon={faServer} /> Express/MongoDB/Cyprus</li>
         </ul>
       </div>
     </div>

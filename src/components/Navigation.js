@@ -5,13 +5,6 @@ import Nav from "react-bootstrap/Nav";
 
 
 export default function Navigation() {
-  const handleNavigation = () => {
-
-  }
-
-
-
-
   return (
     <Navbar bg="light" expand="lg" fixed="top" className='nav-container'>
       <Navbar.Brand href="#main"><img src='https://res.cloudinary.com/dum4u7sro/image/upload/v1589646377/icons_-_Desktop_1_nuacdt.png' alt='logo' /></Navbar.Brand>
