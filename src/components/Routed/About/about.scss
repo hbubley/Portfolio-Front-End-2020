@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
 
+$mobile-break: 425px;
+$tablet-break: 768px;
+$desktop-break: 1024px;
+
 
 $font-brush: 'Nanum Brush Script',
 cursive;
@@ -15,34 +19,72 @@ monospace;
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(10deg); }
-    10% { transform: rotate(-10deg); }
-    20% { transform: rotate(10deg); }
-    30% { transform: rotate(-10deg); }
-    40% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    60% { transform: rotate(10deg); }
-    70% { transform: rotate(-10deg); }
-    80% { transform: rotate(10deg); }
-    90% { transform: rotate(-10deg); }
-    100% { transform: rotate(10deg); }
+    0% {
+        transform: rotate(10deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
 }
+
 @keyframes gradient {
     0% {
-        box-shadow: 3px 3px 5px rgba(117, 213, 253, 0.5) inset, -3px -3px 5px rgba(255, 0, 193, 0.6) inset; 
+        box-shadow: 3px 3px 5px rgba(117, 213, 253, 0.5) inset, -3px -3px 5px rgba(255, 0, 193, 0.6) inset;
     }
+
     20% {
         box-shadow: 0px 0px 10px rgba(255, 0, 193, 0.6) inset, 3px 3px 10px rgba(0, 255, 249, 0.4) inset;
     }
-    40%{
+
+    40% {
         box-shadow: 0px 0px 5px rgba(0, 255, 249, 0.6) inset, -3px 3px 10px rgba(255, 0, 193, 0.6) inset;
     }
-    60%{
+
+    60% {
         box-shadow: 0px 0px 10px rgba(255, 0, 193, 0.6) inset, 3px -3px 10px rgba(0, 255, 249, 0.6) inset;
     }
-    80%{
+
+    80% {
         box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8) inset, -3px -3px 10px rgba(255, 0, 193, 0.4) inset;
     }
+
     100% {
         box-shadow: -3px -3px 5px rgba(117, 213, 253, 0.5) inset, 3px -px 5px rgba(255, 0, 193, 0.6) inset;
     }
@@ -60,8 +102,7 @@ monospace;
 }
 
 .about-container {
-    max-width: 88vw;
-    margin: 0 auto;
+    max-width: 97%;
     display: grid;
     padding-top: 30px;
     grid-template-areas:
@@ -69,22 +110,46 @@ monospace;
         'skills img bio'
         'skills img bio'
         'resume mouse bio';
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+
+    @media screen and (max-width: $desktop-break) {
+        @media screen and (max-width: $tablet-break) {
+            grid-template-areas:
+                'heading heading'
+                'img img'
+                'skills skills'
+                'resume mouse'
+                'bio bio';
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        grid-template-areas: 'heading heading heading heading'
+        'img img img img'
+        'mouse mouse mouse mouse'
+        'skills skills resume resume'
+        'bio bio bio bio';
+    }
 
     .about-header {
         grid-area: heading;
+        padding-bottom: 25px;
 
         p {
             font-family: $font-gothic;
             margin: 0;
-            font-size: 30px;
+            font-size: 25px;
             letter-spacing: 1.3px;
             text-align: center;
             color: rgba($color: white, $alpha: 1);
             text-decoration: none;
             text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
             padding: 5px;
+
+            @media screen and (max-width: $mobile-break) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -94,21 +159,33 @@ monospace;
 
         img {
             max-height: 400px;
+
+            @media screen and (max-width: $mobile-break) {
+                max-height: 200px;
+            }
         }
     }
 
     .about-resume {
         grid-area: resume;
         @include centered-flex-display();
-
+        :any-link {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0)
+        }
         img {
             max-height: 300px;
             border: solid;
             border-radius: 200px;
-            box-shadow:  2px 2px 3px rgba(117, 213, 253, 0.5) inset, -2px -2px 3px rgba(255, 34, 129, 0.5) inset;
+            box-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5) inset, -2px -2px 3px rgba(255, 34, 129, 0.5) inset;
             cursor: pointer;
-            &:hover{
-                border-radius:100px;
+
+            @media screen and (max-width: $mobile-break) {
+                max-width: 120px;
+            }
+
+            &:hover {
+                border-radius: 100px;
                 animation: gradient 6s infinite alternate;
                 transition: 0.5s;
             }
@@ -120,23 +197,83 @@ monospace;
         @include centered-flex-display();
         flex-direction: column;
         color: white;
+        padding-bottom: 15px;
+
+        div {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            @include centered-flex-display();
+            flex-direction: column;
+            border-radius: 20px;
+
+            label {
+                font-family: $font-brush;
+                font-size: 50px;
+                margin: 0;
+                text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
+
+                @media screen and (max-width: $mobile-break) {
+                    font-size: 40px;
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 25px;
+                    font-family: $font-coding;
+                    padding: 8px;
+                    list-style: none;
+                    letter-spacing: 1.5px;
+
+                    @media screen and (max-width: $mobile-break) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 
     .about-bio {
         grid-area: bio;
         @include centered-flex-display();
         flex-direction: column;
-        max-width: 90%;
-        max-height: 80%;
+        justify-self: center;
+        width: 80%;
         font-family: $font-gothic;
         color: white;
         font-size: 20px;
         padding: 20px;
 
+        @media screen and (max-width: $mobile-break) {
+            font-size: 15px;
+        }
+
         div {
+            @include centered-flex-display();
+            flex-direction: column;
             background: rgba(0, 0, 0, 0.4);
             padding: 20px;
+            width: 100%;
             border-radius: 10px;
+            line-height: 30px;
+
+            h1 {
+                margin: 0;
+                font-size: 27px;
+                line-height: 35px;
+
+                @media screen and (max-width: $mobile-break) {
+                    font-size: 20px;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+
+                @media screen and (max-width: $mobile-break) {
+                    font-size: 15px;
+                }
+            }
         }
 
         // box-shadow: 1px 1px 2px rgba(117, 213, 253, 0.6), -1px -1px 2px rgba(255, 34, 129, 0.6);
@@ -144,39 +281,47 @@ monospace;
 
     .about-links {
         @include centered-flex-display();
+        grid-area: mouse;
         color: white;
         flex-direction: row;
         justify-content: space-evenly;
-        font-size: 80px;
+        font-size: 90px;
+
+        @media screen and (max-width: $mobile-break) {
+            font-size: 50px;
+        }
+
         a {
             &:nth-of-type(1) {
                 color: rgba(117, 213, 253, 0.7);
 
-                svg{
-                    filter: drop-shadow( 3px 3px 2px rgba(255, 34, 129, 0.7));
+                svg {
+                    filter: drop-shadow(3px 3px 2px rgba(255, 34, 129, 0.7));
                 }
             }
 
             &:nth-of-type(2) {
                 color: rgba(255, 255, 255, 0.5);
-                svg{
-                    filter: drop-shadow( 3px 3px 2px rgba(174, 51, 255, 0.7));
+
+                svg {
+                    filter: drop-shadow(3px 3px 2px rgba(174, 51, 255, 0.7));
                 }
             }
 
             &:nth-of-type(3) {
                 color: rgba(255, 34, 129, 0.7);
-                svg{
-                    filter: drop-shadow( 2px 2px 2px rgba(117, 213, 253, 0.7));
+
+                svg {
+                    filter: drop-shadow(2px 2px 2px rgba(117, 213, 253, 0.7));
                 }
             }
-            &:hover{
+
+            &:hover {
                 animation: wiggle 3s infinite alternate-reverse both;
                 font-size: 90px;
-                filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.7));
+                filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
                 transition: 0.5s;
             }
         }
     }
 }
-

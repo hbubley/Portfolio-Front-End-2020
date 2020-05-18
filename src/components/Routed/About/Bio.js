@@ -4,6 +4,8 @@ export default function Bio() {
   return (
     <div className="about-bio">
       <div>
+        <h1 className="neon">"Who at the worst, if he fails, at least fails while daring greatly"</h1>
+        <h2 className='neon'>~ Theodore Roosevelt</h2>
         <p>
           By way of a scenic, hands-on journey, I have ventured through life in
           search of experience.
@@ -21,14 +23,6 @@ export default function Bio() {
           challenges and I need hard problems to solve. This self-awareness is
           something I value and I feel privliged to call myself a full-stack
           developer.
-        </p>
-        <p>
-          <span className="neon-alt">I do not fear failure</span>. I believe in
-          order to really learn and understand something, you must fail. This
-          methodology and practice has drastically bolstered my resilience. I do
-          not give up when presented with an obstacle,{" "}
-          <span className="neon-alt">rather, I embrace it</span> and find any
-          opportunities for growth along the way.
         </p>
       </div>
     </div>
