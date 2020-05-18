@@ -1,31 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
 
 export default function Navigation() {
+  const handleNavigation = () => {
+
+  }
+
+
+
+
   return (
-    <Navbar bg="dark" expand="lg" fixed="top" className='nav-container'>
+    <Navbar bg="light" expand="lg" fixed="top" className='nav-container'>
       <Navbar.Brand href="#main"><img src='https://res.cloudinary.com/dum4u7sro/image/upload/v1589646377/icons_-_Desktop_1_nuacdt.png' alt='logo' /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Link to="/">
+          <HashLink to="/#main">
             <Nav.Item>
-              <p>About</p>
+              About
             </Nav.Item>
-          </Link>
-          <Link to="/portfolio">
+          </HashLink>
+          <HashLink to="/portfolio#main">
             <Nav.Item>
-              <p>Portfolio</p>
+              Portfolio
             </Nav.Item>
-          </Link>
-          <Link to="/contactme">
+          </HashLink>
+          <HashLink to="/contactme#main">
             <Nav.Item>
-              <p>Contact Me</p>
+             Contact Me
             </Nav.Item>
-          </Link>
+          </HashLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
