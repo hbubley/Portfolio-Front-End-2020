@@ -2,8 +2,6 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faCodepen } from '@fortawesome/free-brands-svg-icons'
 
-// frontend/portolio/node_modules/@fortawesome/fontawesome-pro/svgs/brands/linkedin.svg
-
 
 export default function PersonalLinks() {
     return (
