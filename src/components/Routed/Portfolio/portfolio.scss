@@ -98,7 +98,8 @@ monospace;
         font-family: $font-gothic;
         color: white;
         text-align: center;
-        padding-bottom: 25px;
+        padding: 25px;
+        text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
     }
 
     .projects-container {
