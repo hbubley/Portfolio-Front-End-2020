@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 export default function Navigation() {
   return (
     <Navbar bg="light" expand="lg" fixed="top" className='nav-container'>
-      <Navbar.Brand href="#hero"><img src='https://res.cloudinary.com/dum4u7sro/image/upload/v1589646377/icons_-_Desktop_1_nuacdt.png' alt='logo' /></Navbar.Brand>
+      <Navbar.Brand><img src='https://res.cloudinary.com/dum4u7sro/image/upload/v1589646377/icons_-_Desktop_1_nuacdt.png' alt='logo' /></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
