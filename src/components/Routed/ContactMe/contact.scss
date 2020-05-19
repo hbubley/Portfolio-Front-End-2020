@@ -42,6 +42,7 @@ monospace;
 
 .contact-container {
     padding-top: 30px;
+    margin-bottom: 10%;
 
     .contact-form {
         display: flex;
@@ -63,7 +64,6 @@ monospace;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
             input {
                 font-family: $font-coding;
                 font-size: 1em;
