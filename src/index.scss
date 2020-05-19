@@ -84,7 +84,7 @@ code {
   @include fade-in('0s');
   //add many delay animations!!
   z-index: -1;
-  min-width: 100vw;
+  max-width: 100vw;
   min-height: 100vh;
   position: fixed;
   display: flex;
@@ -96,7 +96,7 @@ code {
 
   .header-content {
     @include fade-in('1.5s');
-    min-width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     letter-spacing: 5px;
     display: flex;
@@ -117,7 +117,7 @@ code {
       margin: 0;
       padding: 0;
 
-      @media screen and (max-width: $mobile-break) {
+      @media screen and ( max-width: $mobile-break) {
         font-size: 80px;
         line-height: 90px;
         padding-bottom: 10px;
@@ -202,21 +202,6 @@ code {
 
     svg {
       color: white;
-    }
-  }
-  .line-container {
-    display: flex;
-    
-    .hr-line {
-      width: 100%;
-      position: relative;
-      margin: 15px;
-      border-bottom: 1px solid #000;
-    }
-    .hr-icon {
-      position: relative;
-      top: 3px;
-      color: #ff0000;
     }
   }
   // .footer-container{
