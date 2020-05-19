@@ -1,10 +1,18 @@
 [
     {
+        "title": "The Journey",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1589846608/Screenshot_2020-05-18_at_7.02.58_PM_pfcytl.png",
+        "description": "Journaling app I am developing to promote midfulness in children. feat. JWT auth, express, and mongoDB",
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faReact", "faJsSquare", "faSass"],
+        "url": "https://the-journey.netlify.app"
+    },
+    {
         "title": "Todo List",
         "image": "https://res.cloudinary.com/dum4u7sro/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1589830761/Screenshot_2020-05-18_at_2.38.40_PM_eba5g0.png",
         "description": "A todo list leveraging local storage and context",
         "platforms": ["mobile", "tablet", "desktop"],
-        "languages": ["faReact", "faCss3"],
+        "languages": ["faReact", "faJsSquare", "faCss3"],
         "url": "https://codesandbox.io/s/todo-app-haley-bubley-04032020-1fcyb"
     },
     {
@@ -24,6 +32,14 @@
         "url": "https://codepen.io/hbubley/pen/MWwmzxr"
     },
     {
+        "title": "Tarot Cards",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1584121684/Screenshot_2020-03-13_at_12.47.52_PM_mty1i0.png",
+        "description": "jQuery application that produces randomized tarot cards",
+        "platforms": ["desktop", "tablet"],
+        "languages": ["faHtml5", "faJsSquare"],
+        "url": "https://codepen.io/hbubley/live/JjdLLNV"
+    },
+    {
         "title": "Flexbox & Grid",
         "image": "https://screenshot.codepen.io/4083284.Poqmbjy.6464f841-dea0-44cb-b49c-f4f77f0eb332.png",
         "description": "Demonstrating understanding and usage of CSS grid properties",
@@ -35,7 +51,7 @@
         "title": "CSS Grid Image Gallery",
         "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1589832292/Screenshot_2020-05-18_at_3.04.48_PM_h2bwwf.png",
         "description": "Nature based photo gallery image gallery made using css grid",
-        "platforms": ["mobile", " ", "tablet", " ", "desktop"],
+        "platforms": ["mobile", "tablet", "desktop"],
         "languages": ["faCss3"],
         "url": "https://codepen.io/hbubley/pen/QWbgyeV"
     }
