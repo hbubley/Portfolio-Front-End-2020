@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import Icons from "./Icons";
 
 export default function Project({ title, img, des, plat, lang, index, link }) {

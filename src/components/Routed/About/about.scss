@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
 @import "~bootstrap/scss/bootstrap";
-
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 $mobile-break: 425px;
 $tablet-break: 768px;
 $desktop-break: 1024px;
@@ -103,7 +103,7 @@ monospace;
 }
 
 .about-container {
-    max-width: 97%;
+    max-width: 90vw;
     display: grid;
     padding-top: 30px;
     grid-template-areas:
@@ -124,6 +124,9 @@ monospace;
                 'bio bio';
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
+            @media screen and (max-width: $mobile-break){
+                max-width: 90vw;
+            } 
         }
 
         grid-template-areas: 'heading heading heading heading'
@@ -141,7 +144,7 @@ monospace;
             font-family: $font-gothic;
             margin: 0;
             font-size: 25px;
-            letter-spacing: 1.3px;
+            letter-spacing: 1px;
             text-align: center;
             color: rgba($color: white, $alpha: 1);
             text-decoration: none;
@@ -206,15 +209,18 @@ monospace;
             @include centered-flex-display();
             flex-direction: column;
             border-radius: 20px;
+            @media screen and (max-width: $mobile-break) {
+                padding: 10px;
+            }
 
             label {
-                font-family: $font-brush;
-                font-size: 50px;
+                font-family: $font-coding;
+                font-size: 40px;
                 margin: 0;
                 text-shadow: 2px 2px 3px rgba(117, 213, 253, 0.5), -2px -2px 3px rgba(255, 34, 129, 0.5);
 
                 @media screen and (max-width: $mobile-break) {
-                    font-size: 40px;
+                    font-size: 1em;
                 }
             }
 
@@ -227,7 +233,7 @@ monospace;
                     letter-spacing: 1.5px;
 
                     @media screen and (max-width: $mobile-break) {
-                        font-size: 20px;
+                        font-size: 1em;
                     }
                 }
             }
@@ -261,10 +267,9 @@ monospace;
             h1 {
                 margin: 0;
                 font-size: 27px;
-                line-height: 35px;
-
                 @media screen and (max-width: $mobile-break) {
                     font-size: 20px;
+                  
                 }
             }
 
@@ -287,12 +292,10 @@ monospace;
         flex-direction: row;
         justify-content: space-evenly;
         font-size: 90px;
-
-        @media screen and (max-width: $mobile-break) {
-            font-size: 50px;
-        }
-
         a {
+            @media screen and (max-width: $mobile-break) {
+                font-size: .3em;
+            }
             &:nth-of-type(1) {
                 color: rgba(117, 213, 253, 0.7);
 
@@ -322,6 +325,9 @@ monospace;
                 font-size: 90px;
                 filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.7));
                 transition: 0.5s;
+                @media screen and (max-width: $mobile-break) {
+                    font-size: .3em;
+                }
             }
         }
     }

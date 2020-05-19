@@ -1,9 +1,11 @@
 import React from 'react'
+import ContactForm from './ContactMe/ContactForm'
+import './ContactMe/contact.scss'
 
 export default function ContactMe() {
     return (
-        <div>
-            <h1>Contact Me</h1>
+        <div className='contact-container'>
+            <ContactForm />
         </div>
     )
 }

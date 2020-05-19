@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+$mobile-break: 425px;
+$tablet-break: 768px;
+$desktop-break: 1024px;
+
+
+$font-brush: 'Nanum Brush Script',
+cursive;
+$font-gothic: 'Nanum Gothic',
+sans-serif;
+$font-coding: 'Nanum Gothic Coding',
+monospace;
+
+
+@keyframes gradient {
+    0% {
+        box-shadow: 3px 3px 8px rgba(140, 105, 255, 0.8) inset, -3px -3px 5px rgba(255, 0, 193, 0.9) inset;
+    }
+
+    20% {
+        box-shadow: -2px -2px 10px rgba(255, 0, 193, 0.9) inset, 3px 3px 10px rgba(0, 255, 249, 0.9) inset;
+    }
+
+    40% {
+        box-shadow: 2px 2px 5px rgba(0, 255, 249, 0.9) inset, -3px -3px 10px rgba(153, 255, 9, 0.5) inset;
+    }
+
+    60% {
+        box-shadow: 2px 2px 10px rgba(255, 0, 193, 0.9) inset, 3px -3px 10px rgba(0, 255, 249, 0.9) inset;
+    }
+
+    80% {
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.9) inset, -3px -3px 10px rgba(255, 0, 193, 0.9) inset;
+    }
+
+    100% {
+        box-shadow: -3px -3px 5px rgba(117, 213, 253, 0.5) inset, 3px -3px 5px rgba(255, 0, 193, 0.6) inset;
+    }
+}
+
+.contact-container {
+    padding-top: 30px;
+
+    .contact-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            padding: 20px;
+            font-size: 60px;
+            font-family: $font-gothic;
+            color: white;
+            text-shadow: 2px 2px 3px rgba(88, 195, 241, 0.6), -2px -2px 3px rgba(255, 34, 129, 0.6);
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            input {
+                font-family: $font-coding;
+                font-size: 1em;
+                width: 600px;
+                height: 60px;
+                padding-left: 15px;
+                background: transparent;
+                outline: none;
+                color: white;
+                border: solid 1px rgb(105, 188, 255);
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+
+                &:nth-of-type(2) {
+                    border: solid 1px rgb(220, 105, 255);
+
+                    &:hover {
+                        background: rgba(220, 105, 255, 0.1);
+                        backdrop-filter: blur(4px);
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    border: solid 1px rgb(140, 105, 255);
+
+                    &:hover {
+                        background: rgba(140, 105, 255, 0.1);
+                        backdrop-filter: blur(4px);
+                    }
+                }
+
+                &:hover {
+                    background: rgba(105, 188, 255, 0.1);
+                    backdrop-filter: blur(4px);
+                }
+                @media screen and (max-width: $mobile-break){
+                    width: 250px;
+                }
+            }
+
+            textarea {
+                font-family: $font-coding;
+                font-size: 1em;
+                width: 600px;
+                max-width: 600px;
+                height: 300px;
+                max-height: 300px;
+                padding: 15px;
+                background: transparent;
+                color: white;
+                outline: none;
+                border: solid 1px rgb(153, 255, 9);
+                transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: rgba(153, 255, 9, 0.1);
+                    backdrop-filter: blur(4px);
+                }
+                @media screen and (max-width: $mobile-break){
+                    width: 250px;
+                    height: 100px;
+                }
+            }
+
+            button {
+                width: 600px;
+                margin-top: 10px;
+                font-family: $font-coding;
+                font-size: 2em;
+                color: #b3aca7;
+                outline: none;
+                cursor: pointer;
+                background: none;
+                &:hover {
+                    animation: gradient 6s infinite alternate;
+                    transition: 0.5s;
+                }
+                @media screen and (max-width: $mobile-break){
+                    width: 250px;
+                }
+            }
+
+        }
+    }
+}

@@ -82,7 +82,6 @@ code {
 
 .header-container {
   @include fade-in('0s');
-  //add many delay animations!!
   z-index: -1;
   width: 100vw;
   min-height: 100vh;
@@ -91,10 +90,8 @@ code {
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
   background: url('https://res.cloudinary.com/dum4u7sro/image/upload/v1589593901/Desktop_portfolio_of8ycw.png');
-
   .header-content {
     @include fade-in('1.5s');
     width: 100vw;
@@ -107,7 +104,6 @@ code {
     align-items: center;
     box-shadow: 0 0 20px 2px #4d4d4d inset;
     background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
     h1 {
       @include fade-in('3s');
@@ -165,7 +161,7 @@ code {
       }
     }
   }
-  
+
   img {
     width: 40px;
     @media screen and (max-width: $mobile-break) {
