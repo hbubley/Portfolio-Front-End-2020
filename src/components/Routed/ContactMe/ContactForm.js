@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
   return (
     <div className="contact-form">
-      <h1>Shoot A Message</h1>
+      <h1>Shoot a Message</h1>
       <form onSubmit={handleOnSubmit}>
         <label htmlFor="name" />
         <input id="name" type="name" name="name" placeholder="NAME" required />
