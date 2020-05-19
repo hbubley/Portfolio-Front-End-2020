@@ -91,6 +91,7 @@ monospace;
 }
 
 .portfolio-container {
+    margin-bottom: 10%;
     @include centered-flex-display();
     flex-direction: column;
 
