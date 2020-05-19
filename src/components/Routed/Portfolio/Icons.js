@@ -6,8 +6,13 @@ import {
   faHtml5,
   faJsSquare,
   faCss3,
+  faWordpressSimple,
 } from "@fortawesome/free-brands-svg-icons";
-import {  faMobile, faDesktop, faTablet } from '@fortawesome/pro-light-svg-icons'
+import {
+  faMobile,
+  faDesktop,
+  faTablet,
+} from "@fortawesome/pro-light-svg-icons";
 
 export default function Icons({ icon }) {
   switch (icon) {
@@ -25,7 +30,10 @@ export default function Icons({ icon }) {
 
     case "faCss3":
       return <FontAwesomeIcon icon={faCss3} />;
-    
+
+    case "faWordpress":
+      return <FontAwesomeIcon icon={faWordpressSimple} />;
+
     case "desktop":
       return <FontAwesomeIcon icon={faDesktop} />;
 

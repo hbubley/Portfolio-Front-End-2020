@@ -7,10 +7,12 @@ import Footer from "../Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faChevronCircleDown } from '@fortawesome/pro-light-svg-icons'
 
+
 export default function Router() {
   return (
     <div className='Main' id='main'>
       <a href='#main'><FontAwesomeIcon icon={faChevronCircleDown} /></a>
+    
       <Switch>
         <Route exact path="/" component={About} />
         <Route path="/portfolio" component={Portfolio} />

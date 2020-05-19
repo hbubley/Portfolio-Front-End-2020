@@ -8,12 +8,20 @@
         "url": "https://the-journey.netlify.app"
     },
     {
-        "title": "Todo List",
-        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1589830761/Screenshot_2020-05-18_at_2.38.40_PM_eba5g0.png",
-        "description": "A todo list leveraging local storage and context",
+        "title": "Weather App",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1589850785/Screenshot_2020-05-18_at_8.12.58_PM_hja6ru.png",
+        "description": "Simple weather app that calls to a rest api",
         "platforms": ["mobile", "tablet", "desktop"],
         "languages": ["faReact", "faJsSquare", "faCss3"],
-        "url": "https://codesandbox.io/s/todo-app-haley-bubley-04032020-1fcyb"
+        "url": "https://codesandbox.io/s/weather-forecast-haley-bubley-4232020-yo4ii"
+    },
+    {
+        "title": "Static React Dashboard",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1584403604/Screenshot_2020-03-16_at_7.06.01_PM_bqqoyc.png",
+        "description": "Basic dashboard layout constructed in React",
+        "platforms": ["tablet", "desktop"],
+        "languages": ["faReact", "faJsSquare", "faCss3"],
+        "url": "https://codesandbox.io/s/static-dashboard-ett95?fontsize=14&hidenavigation=1&theme=dark"
     },
     {
         "title": "Responsive Design",
@@ -54,5 +62,13 @@
         "platforms": ["mobile", "tablet", "desktop"],
         "languages": ["faCss3"],
         "url": "https://codepen.io/hbubley/pen/vYOmKpo"
+    },
+    {
+        "title": "Wordpress Homepage",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1583871548/Screenshot_2020-03-10_at_3.15.50_PM_zqlkno.png",
+        "description": "Nature based photo gallery image gallery made using css grid",
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faWordpress"],
+        "url": "https://dots-and-lines.com/"
     }
 ]
