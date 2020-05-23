@@ -8,6 +8,14 @@
         "url": "https://the-journey.netlify.app"
     },
     {
+        "title": "Github Finder",
+        "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1590251604/Screenshot_2020-05-23_at_11.32.51_AM_jwwvft.png",
+        "description": "React app connected to github API, search through all github users",
+        "platforms": ["mobile", "tablet", "desktop"],
+        "languages": ["faReact", "faJsSquare", "faSass"],
+        "url": "https://git-finder2020.netlify.app/"
+    },
+    {
         "title": "Weather App",
         "image": "https://res.cloudinary.com/dum4u7sro/image/upload/v1589850785/Screenshot_2020-05-18_at_8.12.58_PM_hja6ru.png",
         "description": "Simple weather app that calls to a rest api",
